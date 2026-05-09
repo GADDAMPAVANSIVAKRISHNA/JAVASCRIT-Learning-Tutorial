@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Identifier Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Body Temperature</h3>
+        </div>
+
+        <div class="panel-body">
+            <script>
+                var tempFahrenheit = 99;
+                let TempFahrenheit = 99;
+                // let TempFahrenheit=99; Redeclaration is not allowed 
+
+                const TEMP_CELSIUS = 38;
+                let celsiusScale  = "Celsius Scale";
+                const NORMAL_FAHREN = 98.6;
+
+                // document.write() is used to write content onto the HTML page
+                document.write("Default temperature (var) is: " + tempFahrenheit + "</span>");
+                document.write("<br/>");
+                document.write("Default temperature (let) is: " + TempFahrenheit + "</span>");
+                document.write("<br/>");
+                document.write("Normal body temperature in Celsius is: " + TEMP_CELSIUS + "</span>");
+                document.write("<br/>");
+                document.write("Normal body temperature in fahrenheit is: " + NORMAL_FAHREN + "</span>");
+                document.write("<br/>");
+                document.write("Temperature scale is: " + celsiusScale + "</span>");
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
