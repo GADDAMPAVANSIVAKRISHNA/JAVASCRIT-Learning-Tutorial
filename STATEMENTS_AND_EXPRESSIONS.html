@@ -1,0 +1,63 @@
+/*Problem Statement:
+
+Write a JavaScript code to make online booking of theatre tickets and calculate the total price based on the below conditions:
+
+If seats to be booked are not more than 2, the cost per ticket remains $9.
+
+If seats are 5 or more, booking is not allowed.
+
+If seats to be booked are more than 2 but less than 5, based on the number of seats booked, do the following:
+
+Calculate total cost by applying discounts of 5, 7, 9, 11 percent, and so on for customer 1,2,3 and 4.
+
+Try the code with different values for the number of seats.
+
+Expected Output:*/
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theatre Ticket Booking</title>
+</head>
+
+<body>
+
+<script>
+
+    let seatPrice = 9;
+
+    let noOfSeats = Number(prompt("Enter number of seats:"));
+
+    let totalCost = 0;
+
+    if (noOfSeats >= 5) {
+
+        document.write("Booking not allowed");
+
+    }
+    else if (noOfSeats <= 2) {
+
+        totalCost = noOfSeats * seatPrice;
+
+        document.write("Total Cost = $" + totalCost);
+
+    }
+    else {
+
+        for (let i = 1; i <= noOfSeats; i++) {
+
+            let discount = 5 + (i - 1) * 2;
+
+            let ticketCost = seatPrice - (seatPrice * discount / 100);
+
+            totalCost += ticketCost;
+        }
+
+        document.write("Total Cost = $" + totalCost.toFixed(2));
+    }
+
+</script>
+
+</body>
+</html>
