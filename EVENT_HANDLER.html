@@ -1,0 +1,13 @@
+<!-- As seen in event handling code, event-handler is a piece of JavaScript code put inside the HTML Paragraph element .
+
+<p onclick="executeMe();">Para says !!! </p> 
+On the right-hand side of this code instead of invoking a function, lines of code can be directly written as shown below:
+
+ <p onclick="alert('A click event has been triggered by the user');">Para says !!! </p> 
+This is referred to as Inline Scripting where lines of JavaScript code is embedded inline to HTML elements.
+
+However, due to tight coupling with the elements in which the code is written, this approach is not suggested. The alternate and much better approach is to use functions in JavaScript.
+
+ 
+
+ Best Practice: Event listeners are the most preferred way to handle events in JavaScript. One of the major points to use event listeners is, it does allow us to add multiple event listeners on the same element when compared with the "on" properties like onmouseclick, onmouseover, etc.. -->

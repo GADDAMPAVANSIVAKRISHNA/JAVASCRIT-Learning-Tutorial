@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script>
+        let num1 = 100;
+        let num2 = 0;
+        try {
+            if (isNaN(num1) || isNaN(num2)) {
+                throw "Not a number"
+            }
+            else {
+                if (num2 == 0) {
+                    throw "Divide by zero error";
+                }
+                else {
+                    let result = num1 / num2;
+                }
+            }
+        }
+        catch (e) {
+            console.log("Error: " + e);
+        }
+        finally {
+            console.log("Some error occured");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
